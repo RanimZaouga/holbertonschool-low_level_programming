@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints the size of various types based on
  *
- * Description: using sizeof to print the size of various types.
+ * the computer it is compiled and run on..
  *
  * Return: Always 0 (success)
  */
