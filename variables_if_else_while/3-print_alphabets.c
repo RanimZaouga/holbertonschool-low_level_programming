@@ -12,10 +12,14 @@ char C;
 c = 'a';
 C = 'A';
 while
-(c <= 'z') (C <= 'Z'); {
+(c <= 'z') {
 putchar(c);
-putchar(C);
 c++;
+}
+while
+(C <= 'Z') {
+putchar (C);
+C++;
 }
 putchar('\n');
 return (0);
