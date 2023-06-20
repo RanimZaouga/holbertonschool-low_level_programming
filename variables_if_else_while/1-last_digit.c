@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
 *main - Entry point
-*
-Return: Always 0 (success)
+*Description: print last digit
+*Return: Always 0 (success)
 */
 
 /* more headers goes there */
@@ -13,7 +13,6 @@ Return: Always 0 (success)
 int main(void)
 {
 	int n;
-
 	int i;
 
 	srand(time(0));
