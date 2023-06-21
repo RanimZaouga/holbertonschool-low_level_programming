@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <-std=c11>
 /**
  * main - Entry points
  *
@@ -10,14 +9,18 @@
 
 int main(void)
 {
-for (int i = 0; i < 16; i++)
+int i = 0;
+char c = 'a';
+
+while (i <= 9)
 {
-if (i < 10)
-putchar('0' + i);
-else
-{
-putchar('A' + (i - 10));
+putchar(i);
+i++;
 }
+while (c <= 'z')
+{
+putchar(c);
+c++;
 }
 putchar('\n');
 return (0);
