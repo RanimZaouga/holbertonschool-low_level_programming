@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <-std=c11>
 /**
  * main - Entry points
  *
