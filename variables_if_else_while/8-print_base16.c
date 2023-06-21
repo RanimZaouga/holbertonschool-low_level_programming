@@ -17,7 +17,7 @@ while (i <= 9)
 putchar(i);
 i++;
 }
-while (c <= 'z')
+while (c <= 'f')
 {
 putchar(c);
 c++;
