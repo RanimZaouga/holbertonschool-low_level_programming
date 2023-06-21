@@ -14,7 +14,7 @@ while (i <= 57)
 {
 putchar(i);
 if
-(i != 9)
+(i != 57)
 {
 putchar(',');
 putchar(' ');
