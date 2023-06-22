@@ -10,7 +10,7 @@ if (i >= o)
 {
 i = i % 10;
 }
-else if (i < 0)
+else
 {
 i = -i;
 i = i % 10;
