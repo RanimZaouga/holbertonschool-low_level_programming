@@ -14,6 +14,7 @@ else
 {
 i = -i;
 i = i % 10;
+INT_MIN = -INT_MIN;
 }
 _putchar(i + '0');
 return (i);
