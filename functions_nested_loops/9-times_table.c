@@ -13,10 +13,10 @@ for (line = 1; line <= 10; line++)
 {
 for (n = 0; n <= 9; n++)
 n = i * n;
+}
 _putchar(n + '0');
 _putchar(',');
 _putchar(' ');
-}
 }
 _putchar('\n');
 }
