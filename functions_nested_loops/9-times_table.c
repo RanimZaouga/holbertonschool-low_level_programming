@@ -10,9 +10,7 @@ int i, n, line;
 for (i = 0; i <= 9; i++)
 {
 for (n = 0; n <= 9; n++)
-{
 n = i * n;
-}
 }
 _putchar(n + '0');
 _putchar(',');
