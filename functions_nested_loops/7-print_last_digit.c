@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 /**
 * print_last_digit - entry point
 * @i: compteur
@@ -14,7 +15,7 @@ else
 {
 i = -i;
 i = i % 10;
-INT_MIN = -INT_MIN;
+INT_MIN == -INT_MIN;
 }
 _putchar(i + '0');
 return (i);
