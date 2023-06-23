@@ -15,9 +15,9 @@ int line, i;
 if (size > 0)
 for (line = 1; line <= size; line++)
 {
+_putchar('#');
 for (i = 1; i <= size; i++)
 {
-_putchar('#');
 _putchar('\n');
 }
 }
