@@ -11,9 +11,9 @@
  */
 void print_square(int size)
 {
-int i;
+int i, line;
 if (size > 0)
-for (i = 1; i <= size; i++)
+for (line = 1; line <= size; line++)
 {
 for (i = 1; i <= size; i++)
 {
