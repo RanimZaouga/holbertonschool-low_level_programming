@@ -9,11 +9,11 @@
  */
 void print_line(int n)
 {
-for (n = 1; n <= n; n++)
+int i;
+for (i = 1; i <= n; i++)
 {
 _putchar('_');
 }
 _putchar('\\');
 _putchar('n');
-
 }
