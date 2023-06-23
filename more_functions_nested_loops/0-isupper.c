@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
 * _isupper - entry point
 * @c: cmpteur
 * Return: 1 if c is uppercase otherwise 0
 */
-int _islower(int c)
+
+int _isupper(int c)
 {
 if (c >= 'A' && c <= 'Z')
 {
