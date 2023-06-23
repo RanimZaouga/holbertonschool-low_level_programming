@@ -16,7 +16,7 @@ if (n > 0)
 {
 for (i = 1; i <= n; i++)
 {
-for (space = 1; space <= i-1; space++)
+for (space = 1; space <= i - 1; space++)
 _putchar(' ');
 _putchar('\\');
 _putchar('\n');
