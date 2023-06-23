@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ * print_square - function that prints a diagonal
+ *
+ * @size: number
+ *
+ * Description: using _putchar to print a square
+ *
+ * Return: Always 0 (success)
+ */
+void print_square(int size)
+{
+int i;
+if (size > 0)
+for (i = 1; i <= size; i++)
+{
+_putchar('#');
+_putchar('\n');
+_putchar('#');
+}
+else
+{
+_putchar('\n');
+}
+}
