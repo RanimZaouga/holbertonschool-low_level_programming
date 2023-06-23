@@ -11,18 +11,11 @@
  */
 void print_square(int size)
 {
-int line, i;
-if (size > 0)
-for (line = 1; line <= size; line++)
+int row, column;
+for (row = 1; row <= size; row++)
 {
-_putchar('#');
-for (i = 1; i <= size; i++)
-{
-_putchar('\n');
-}
-}
-else
-{
-_putchar('\n');
+    for (column = 1; column <= size; column++)
+    _putchar('#');
+    _putchar('\n');
 }
 }
