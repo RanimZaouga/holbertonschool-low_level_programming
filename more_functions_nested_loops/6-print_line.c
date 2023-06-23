@@ -2,7 +2,7 @@
 
 /**
  * print_line - function that prints a line
- * 
+ *
  * @n: number
  *
  * Description: using _putchar to print a line
