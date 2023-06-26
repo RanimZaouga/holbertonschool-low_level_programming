@@ -4,5 +4,11 @@ EXEC = school
 # The all rule builds the executable
 all: $(EXEC)
 # The $(EXEC) rule builds the executable
-$(EXEC): school.c
-	gcc -o $(EXEC) school.c
+$(EXEC): school.o
+	gcc -o $(EXEC) school.o
+# The school.o rule builds the school.o object file
+school.o: school.c
+	gcc -c school.c
+# The clean rule removes all object files and the executable
+clean:
+	rm -f *.o $(EXEC)
