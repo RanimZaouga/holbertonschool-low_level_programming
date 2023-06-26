@@ -1,6 +1,12 @@
 # Compiler options
 CC = gcc
-CFLAGS =
+CFLAGS = 
+
+# Source files
+SRCS = main.c
+
+# Object files
+OBJS = $(SRCS:.c=.o)
 
 # Target executable
 TARGET = school
@@ -9,10 +15,15 @@ TARGET = school
 all: $(TARGET)
 
 # Rule for building the executable
-$(TARGET): main.c
-	$(CC) $(CFLAGS) -o $@ $<
+$(TARGET): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $^
+
+# Rule for compiling source files
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 # Clean target
 clean:
-	rm -f $(TARGET)
+	rm -f $(OBJS) $(TARGET)
+
 
