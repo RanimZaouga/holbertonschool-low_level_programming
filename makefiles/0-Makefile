@@ -1,14 +1,8 @@
-# This is a comment
-TARGET = school
-SRC = main.c myfunc.c
-OBJ = $(SRC:.c=.o)
-CC = gcc
-CFLAGS = -Wall -Wextra -pedantic
-LDLIBS = -lm
-all: $(TARGET)
-$(TARGET): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $@ $(LDLIBS)
-.c.o:
-	$(CC) $(CFLAGS) -c $< -o $@
-clean:
-	rm -f $(TARGET) $(OBJ)
+# A makefile for the school program
+# The name of the executable
+EXEC = school
+# The all rule builds the executable
+all: $(EXEC)
+# The $(EXEC) rule builds the executable
+$(EXEC): school.c
+	gcc -o $(EXEC) school.c
