@@ -1,14 +1,2 @@
-# A makefile for the school program
-# The name of the executable
-EXEC = school
-# The all rule builds the executable
-all: $(EXEC)
-# The $(EXEC) rule builds the executable
-$(EXEC): school.o
-	gcc -o $(EXEC) school.o
-# The school.o rule builds the school.o object file
-school.o: school.c
-	gcc -c school.c
-# The clean rule removes all object files and the executable
-clean:
-	rm -f *.o $(EXEC)
+all: main.c school.c
+gcc main.c school.c -o school
