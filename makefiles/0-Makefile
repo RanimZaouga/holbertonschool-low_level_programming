@@ -1,29 +1,9 @@
-# Compiler options
-CC = gcc
-CFLAGS = 
-
-# Source files
-SRCS = main.c
-
-# Object files
-OBJS = $(SRCS:.c=.o)
-
-# Target executable
-TARGET = school
-
-# Default target
-all: $(TARGET)
-
-# Rule for building the executable
-$(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^
-
-# Rule for compiling source files
-%.o: %.c
-	$(CC) $(CFLAGS) -c -o $@ $<
-
-# Clean target
-clean:
-	rm -f $(OBJS) $(TARGET)
-
+# This is a makefile for the school program.
+# The name of the executable.
+EXEC = school
+# The all rule builds the executable.
+all: $(EXEC)
+# The $(EXEC) rule builds the executable from the school.c file.
+$(EXEC): school.c
+	$(CC) $(CFLAGS) school.c -o $(EXEC)
 
