@@ -9,9 +9,10 @@ TARGET = school
 all: $(TARGET)
 
 # Rule for building the executable
-$(TARGET):
-	$(CC) $(CFLAGS) -o $@ main.c
+$(TARGET): main.c
+	$(CC) $(CFLAGS) -o $@ $<
 
 # Clean target
 clean:
 	rm -f $(TARGET)
+
