@@ -1,0 +1,17 @@
+# Compiler options
+CC = gcc
+CFLAGS =
+
+# Target executable
+TARGET = school
+
+# Default target
+all: $(TARGET)
+
+# Rule for building the executable
+$(TARGET):
+	$(CC) $(CFLAGS) -o $@ main.c
+
+# Clean target
+clean:
+	rm -f $(TARGET)
