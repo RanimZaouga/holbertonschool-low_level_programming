@@ -1,0 +1,1 @@
+read me pointers arrays strings
