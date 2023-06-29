@@ -4,21 +4,21 @@
 /**
 * print_array - prints elements of an array
 *
-* @a: array name
-* @n: number of elments
+* @a: name of the array
+* @n: number of elements
 *
-* Return: nothing
+* Return: a and n inputs
 */
 
-print_array(int *a, int n)
+void print_array(int *a, int n)
 {
 int i;
-for (i = 0; i < n; i++)
 {
-if (i != (n - 1))
 printf("%d, ", a[i]);
-else
-printf("%d", a[i]);
+}
+if (i == (n - 1))
+{
+printf("%d", a[n - 1]);
 }
 printf("\n");
 }
