@@ -4,8 +4,8 @@
 /**
 * print_array - prints elements of an array
 *
-* @a: int
-* @n: int
+* @a: array name
+* @n: number of elments
 *
 * Return: nothing
 */
@@ -20,5 +20,5 @@ printf("%d, ", a[i]);
 else
 printf("%d", a[i]);
 }
-printf('\n');
+printf("\n");
 }
