@@ -5,7 +5,7 @@
 *
 * @dest: str
 * @src: str
-* 
+*
 * Return: pointer
 */
 
