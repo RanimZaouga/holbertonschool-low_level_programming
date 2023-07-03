@@ -13,15 +13,11 @@ char *string_toupper(char *s)
 	int n = strlen(s);
 	int i;
 
-	for (i = 0; i < n; i++)
+	for (s[i] >= 'a' && s[i] <= 'z')
 	{
 		if (s[i] = [97 .. 122])
 		{
 		s[i] = s[i] - 32;
-		}
-		else
-		{
-		s[i] = s[i];
 		}
 	}
 	return (0);
