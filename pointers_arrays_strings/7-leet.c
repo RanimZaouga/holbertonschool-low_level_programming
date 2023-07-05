@@ -22,5 +22,5 @@ char *leet(char *str)
 		}
 		str++;
 	}
-	return (strp)
+	return (strp);
 }
