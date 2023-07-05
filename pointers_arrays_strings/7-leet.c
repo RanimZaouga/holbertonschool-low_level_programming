@@ -17,7 +17,8 @@ char *leet(char *str)
 		{
 			if (*str == key[i] || *str == key[i] + 32)
 			{
-			*str = 48 + value[i];
+			*str = value[i];
+			break;
 			}
 		}
 		str++;
