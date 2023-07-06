@@ -1,30 +1,30 @@
 #include "main.h"
+#include <stdio.h>
+
+int check_prime(int n, int i);
+
 /**
-* is_prime_recursive - helper function for checking prime numbers recursively
-* @n: input number
-* @i: divisor
-* Return: 1 if prime, 0 otherwise
+* is_prime_number - Returns if a number is prime
+* @n: input
+* Return: int value
 */
-int is_prime_recursive(int n, int i)
-{
-	if (n <= 1)
-		return (0);
-
-	if (i == 1)
-		return (1);
-
-	if (n % i == 0)
-		return (0);
-
-	return (is_prime_recursive(n, i - 1));
-}
-
 int is_prime_number(int n)
-/**
-* is_prime_number - checks if a number is prime using recursion
-* @n: input number
-* Return: 1 if prime, 0 otherwise
-*/
 {
-	return (is_prime_recursive(n, n - 1));
+	return (check_prime(n, 1));
 }
+/**
+* check_prime - check if number is prime
+* @n: the number to be checked
+* @i: checker
+* Return: 1 if prime 0 if not
+*/
+ int check_prime (int n, int i)
+ {
+ 	if (n <= 1)
+		return (0);
+	if (n % i == 0 && i > 1)
+		return (0);
+	if ((n / i) < i)
+		return (1);
+	return (check_prime(n, i+1));	
+ }		
