@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* is_prime_recursive - helper function for calculating
+* is_prime_recursive - helper function for checking prime numbers recursively
 * @n: input number
-* @i: initial
-* Return: prime number
+* @i: divisor
+* Return: 1 if prime, 0 otherwise
 */
 int is_prime_recursive(int n, int i)
 {
@@ -21,9 +21,9 @@ int is_prime_recursive(int n, int i)
 
 int is_prime_number(int n)
 /**
-* is_prime_number - returns the natural square root of a number
+* is_prime_number - checks if a number is prime using recursion
 * @n: input number
-* Return: 1 if primr number
+* Return: 1 if prime, 0 otherwise
 */
 {
 	return (is_prime_recursive(n, n - 1));
