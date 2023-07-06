@@ -19,7 +19,7 @@ void print_diagsums(int *a, int size)
     }
     for (y = size - 1; y >= 0; y--)
     {
-        s2 += a[y *size + (size - y - 1)]
+        s2 += a[y *size + (size - y - 1)];
     }
     printf("%d, %d\n", s1, s2);
 }
