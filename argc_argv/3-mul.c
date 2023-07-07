@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
-*main - converts a string to an int
-* @s: string 
+* _atoi - converts a string to an int
+* @s: string
 * Return: the int converted
 */
 int _atoi(char *s)
@@ -20,7 +20,7 @@ int _atoi(char *s)
 		len++;
 	while (i < len && f == 0)
 	{
-		if (s[i] == '_')
+		if (s[i] == '-')
 		++d;
 		if (s[i] >= '0' && s[i] <= '9')
 		{
@@ -31,13 +31,13 @@ int _atoi(char *s)
 			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-			f = 0;		
+			f = 0;
 		}
 		i++;
 	}
 	if (f == 0)
 		return (0);
-	return (n);	
+	return (n);
 }
 
 /**
@@ -46,8 +46,8 @@ int _atoi(char *s)
 * @argv: array of args
 * Return: Always 0 (success)
 */
- int main(int argc, char *argv[])
- {
+int main(int argc, char *argv[])
+{
 	int n1, n2;
 
 	if (argc != 3)
@@ -60,4 +60,4 @@ int _atoi(char *s)
 	printf("%d\n", n1 * n2);
 	return (0);
 
- }
+}
