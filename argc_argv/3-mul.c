@@ -50,7 +50,7 @@ int _atoi(char *s)
  {
 	int n1, n2;
 
-	if (argc < 3 || argc > 0)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
