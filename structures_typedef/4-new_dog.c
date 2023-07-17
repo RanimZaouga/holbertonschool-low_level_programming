@@ -3,7 +3,7 @@
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 /**
- * new_dog - creates a new dog and allocates it
+ * new_dog - makes a new dog, memory and all
  * @name: name to create mem and assign to for dog
  * @age: age to assign to for dog
  * @owner: owner to create mem and assign to for dog
@@ -12,38 +12,38 @@ char *_strcpy(char *dest, char *src);
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d;
+	dog_t *new_d;
 
-	d = malloc(sizeof(dog_t));
-	if (d == NULL)
+	new_d = malloc(sizeof(dog_t));
+	if (new_d == NULL)
 		return (NULL);
-	if (d->name == NULL)
-		return (NULL);
+	if (name == NULL)
+		new_d->name = NULL;
 	else
 	{
-		d->name = malloc(_strlen(name) + 1);
-		if (d->name == NULL)
+		new_d->name = malloc(_strlen(name) + 1);
+		if (new_d->name == NULL)
 		{
-			free(d);
+			free(new_d);
 			return (NULL);
 		}
-		d->name = _strcpy(d->name, name);	
+		new_d->name = _strcpy(new_d->name, name);
 	}
 	if (owner == NULL)
-		d->owner = NULL;
+		new_d->owner = NULL;
 	else
 	{
-		d->owner = malloc(_strlen(owner) + 1);
-		if (d->owner == NULL)
+		new_d->owner = malloc(_strlen(owner) + 1);
+		if (new_d->owner == NULL)
 		{
-			free(d->name);
-			free(d);
+			free(new_d->name);
+			free(new_d);
 			return (NULL);
 		}
-		d->owner = _strcpy(d->owner, owner);
+		new_d->owner = _strcpy(new_d->owner, owner);
 	}
-	d->age = age;
-	return (d);
+	new_d->age = age;
+	return (new_d);
 }
 /**
  * _strlen - gets len of str
