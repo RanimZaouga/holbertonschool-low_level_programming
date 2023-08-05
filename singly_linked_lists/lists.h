@@ -2,7 +2,7 @@
 #define SINGLY_LINKED_LISTS
 
 /**
- * struct list_s - singly linked list
+ * struct list_node - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points to the next node
@@ -12,7 +12,7 @@
 typedef struct list_node
 {
 	char *str;
-    size_t len;
+	size_t len;
 	struct list_node *next;
 } list_t;
 
