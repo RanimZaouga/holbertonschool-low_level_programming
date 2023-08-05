@@ -12,29 +12,29 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *current = h;  // Start from the head of the list
-	size_t count = 0;           // Counter for the number of nodes
+	const list_t *current = h;
+	size_t count = 0;
 
 	 while (current != NULL)
 	 {
 		if (current->str == NULL)
 		{
-			printf("[0] (nil)");  // Print "[0] (nil)" if the string is NULL
+			printf("[0] (nil)");
 		}
 		else 
 		{
 			size_t len = 0;
 			while (current->str[len] != '\0')
 			{
-				len++;  // Calculate the string length manually
+				len++;
 			}
-			printf("[%zu] %s", len, current->str); // Print the string length and the string
+			printf("[%zu] %s", len, current->str);
 		}
 
-		printf("\n");  // Print a new line after printing each node
-		count++;       // Increment the node count
-		current = current->next;  // Move to the next node
+		printf("\n");
+		count++;
+		current = current->next;
 	}
 
-	return count;  // Return the total number of nodes
+	return (count);
 }
