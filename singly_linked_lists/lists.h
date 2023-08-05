@@ -12,6 +12,7 @@
 typedef struct list_node
 {
 	char *str;
+    size_t len;
 	struct list_node *next;
 } list_t;
 
