@@ -12,7 +12,7 @@
 typedef struct list_node
 {
 	char *str;
-	struct list_s *next;
+	struct list_node *next;
 } list_t;
 
 size_t print_list(const list_t *h);
