@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -12,15 +9,13 @@
 
 size_t list_len(const list_t *h)
 {
-	int i = 0;
+	size_t count = 0;
 
-	node p;
-	p = head;
-	while (p != NULL)
+	while (h != NULL)
 	{
-		p = p->next;
-		i++
+		h = h->next;
+		count++
 	}
-return (i);
+return (count);
 
 }
