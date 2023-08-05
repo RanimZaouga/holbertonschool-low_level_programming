@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 		else
 		{
 			size_t len = 0;
-			
+
 			while (h->str[len] != '\0')
 			{
 				len++;
