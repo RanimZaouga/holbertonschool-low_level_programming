@@ -1,5 +1,5 @@
 #include "lists.h"
-**
+/**
  * add_node_end - adds a new node at the end of the list_t list
  *
  * @head: pointer to the pointer to the head of the list
@@ -8,7 +8,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t new_node*
+	list_t *new_node
     if (str == NULL)
         return (NULL);
 
@@ -35,7 +35,6 @@ list_t *add_node_end(list_t **head, const char *str)
     else
     {
         /* Find the last node in the list */
-        list_t *current = *head;
         while (head->next != NULL)
         {
             head = head->next;
