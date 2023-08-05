@@ -9,10 +9,6 @@
  * Return: Always 0.
  */
 
-typedef struct list_node {
-	char *str;               // String data stored in the node
-	struct list_node *next;  // Pointer to the next node
-} list_t;
 
 size_t print_list(const list_t *h)
 {
