@@ -1,4 +1,7 @@
 #include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #ifndef SINGLY_LINKED_LISTS
 #define SINGLY_LINKED_LISTS
 
