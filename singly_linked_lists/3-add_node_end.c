@@ -35,13 +35,14 @@ list_t *add_node_end(list_t **head, const char *str)
     else
     {
         /* Find the last node in the list */
-        while (*head->next != NULL)
+		list_t *i = *head;
+        while (i->next != NULL)
         {
-            head = head->next;
+            i = i->next;
         }
 
         /* Add the new node after the last node */
-        head->next = new_node;
+        i->next = new_node;
     }
 
     return (new_node);
