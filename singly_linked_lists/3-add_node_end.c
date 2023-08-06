@@ -9,43 +9,43 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
-    if (str == NULL)
+	if (str == NULL)
 	{
-        return (NULL);
+		return (NULL);
 	}
 
 	new_node = malloc(sizeof(list_t));
-    if (new_node == NULL)
-        return (NULL);
+	if (new_node == NULL)
+		return (NULL);
 
-    new_node->str = strdup(str);
-    if (new_node->str == NULL)
-    {
-        free(new_node);
-        return (NULL);
-    }
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
+	{
+		free(new_node);
+		return (NULL);
+	}
 
-    new_node->len = strlen(str);
+	new_node->len = strlen(str);
 
-    new_node->next = NULL;
+	new_node->next = NULL;
 
-    /* If the list is empty, make the new node the head */
-    if (*head == NULL)
-    {
-        *head = new_node;
-    }
-    else
-    {
-        /* Find the last node in the list */
+	/* If the list is empty, make the new node the head */
+	if (*head == NULL)
+	{
+		*head = new_node;
+	}
+	else
+	{
+		/* Find the last node in the list */
 		list_t *i = *head;
-        while (i->next != NULL)
-        {
-            i = i->next;
-        }
+		while (i->next != NULL)
+		{
+			i = i->next;
+		}
 
-        /* Add the new node after the last node */
-        i->next = new_node;
-    }
+		/* Add the new node after the last node */
+		i->next = new_node;
+	}
 
-    return (new_node);
+	return (new_node);
 }
