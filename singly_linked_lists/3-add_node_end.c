@@ -9,6 +9,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -38,6 +39,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		/* Find the last node in the list */
 		list_t *i = *head;
+
 		while (i->next != NULL)
 		{
 			i = i->next;
