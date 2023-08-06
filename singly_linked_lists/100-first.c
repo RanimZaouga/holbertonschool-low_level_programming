@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_before_main - function that print string before 
+ * print_before_main - function that print string before
  * the main functionis excuted
  */
 void print_before_main(void) __attribute__((constructor));
