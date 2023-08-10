@@ -6,8 +6,10 @@
  * @filename: The name of the text file to read.
  * @letters: The number of letters to read and print.
  *
- * @return The actual number of letters read and printed. If the file cannot be opened or read,
- *         or if write fails to print the expected amount of bytes, 0 is returned.
+ * return: The actual number of letters read and printed.
+ *  If the file cannot be opened or read,
+ *         or if write fails to print the expected amount of bytes,
+ *  0 is returned.
  *         If filename is NULL, 0 is returned.
  */
 
@@ -23,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	lett = malloc(letters);
 	if (lett == NULL)
 	{
-		return (0);	
+		return (0);
 	}
 	op = open(filename, O_RDONLY);
 	rd = read(op, lett, letters);
