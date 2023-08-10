@@ -6,7 +6,7 @@
  * @filename: The name of the text file to read.
  * @letters: The number of letters to read and print.
  *
- * return: The actual number of letters read and printed.
+ * Return: The actual number of letters read and printed.
  *  If the file cannot be opened or read,
  *         or if write fails to print the expected amount of bytes,
  *  0 is returned.
