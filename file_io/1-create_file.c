@@ -19,15 +19,20 @@ int create_file(const char *filename, char *text_content)
     {
         return (-1);
     }
-    if (text_content !== NULL)
+    if (text_content != NULL)
     {
         length = strlen(text_content);
     }
     o = open(filename, O_CREAT | O_RDWR, 0600);
+    if (o == -1)
+    {
+        return (-1);
+    }
     w = write(o, text_content, length);
 
-    if (o == -1 || w == -1)
+    if (w == -1)
     {
+        close(o);
         return (-1);
     }
     close(o);
