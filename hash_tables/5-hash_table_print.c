@@ -29,8 +29,8 @@ void hash_table_print(const hash_table_t *ht)
 				printf(", ");
 			/* Print the key-value pair */
 			printf("'%s': '%s'", current->key, current->value);
-			comma = 1; // Set comma to 1 after the first key-value pair
-			current = current->next; // Move to the next node in the linked list
+			comma = 1; /* Set comma to 1 after the first key-value pair */
+			current = current->next; /* Move to the next node in the linked list */
 		}
 	}
 
