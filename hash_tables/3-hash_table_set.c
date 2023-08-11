@@ -11,12 +11,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index = 0;
 	hash_node_t *current = NULL, *new_node = NULL;
 
-	/* Check for invalid parameters or empty key/value */
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
-	/* Get the index where the key/value should be stored */
 	index = key_index((const unsigned char *)key, ht->size);
-	/* Check if the key already exists, update value if found */
 	current = ht->array[index];
 	while (current != NULL)
 	{
@@ -48,7 +45,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new_node);
 		return (0); /* Memory allocation failed */
 	}
-	/* Add the new node at the beginning of the linked list */
 	new_node->next = ht->array[index];
 	ht->array[index] = new_node;
 	return (1); /* Success */
