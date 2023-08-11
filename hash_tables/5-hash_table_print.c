@@ -9,7 +9,7 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
 	hash_node_t *current;
-	int comma = 0; // Used to handle comma separation
+	int comma = 0; /* Used to handle comma separation */
 
 	/* Check if the hash table is NULL */
 	if (ht == NULL)
